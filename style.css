@@ -1,0 +1,68 @@
+:root{
+  
+    --ramka:solid red;
+}
+
+
+body
+{
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(img/tlo_strony.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family: 'Lato', sans-serif;
+  
+
+}
+
+
+.head-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing:border-box;
+    
+}
+
+
+.header
+{  
+    width:80%;
+    display:flex;
+    flex-direction: row;
+    height:110px;
+    
+}
+
+
+.header-logo
+{
+     
+    width:150px;
+    display:flex;
+    align-content:flex-start;
+    color:white;
+}
+
+.header-logo-img
+{
+    width:43px;
+    margin-left: 5px;
+    padding-top: 3px;
+    
+}
+
+
+.header-contact
+{
+    display:flex;
+    justify-content: flex-end; 
+    text-align: right;
+    align-items: center;
+    flex:1;
+    color:white;
+    
+}
