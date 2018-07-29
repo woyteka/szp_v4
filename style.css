@@ -17,13 +17,19 @@ body
 
 }
 
+/*==========================================*/
+/*================= HEADER =================*/
+/*==========================================*/
+
 
 .head-container
 {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     box-sizing:border-box;
+    align-items: center;
     
 }
 
@@ -34,6 +40,7 @@ body
     display:flex;
     flex-direction: row;
     height:110px;
+    margin-top:1.5em;
     
 }
 
@@ -41,7 +48,7 @@ body
 .header-logo
 {
      
-    width:150px;
+    width:120px;
     display:flex;
     align-content:flex-start;
     color:white;
@@ -49,9 +56,10 @@ body
 
 .header-logo-img
 {
-    width:43px;
+    width:40px;
     margin-left: 5px;
     padding-top: 3px;
+   
     
 }
 
@@ -64,5 +72,173 @@ body
     align-items: center;
     flex:1;
     color:white;
+    font-size: 0.8em;
     
+}
+
+
+/*==========================================*/
+/*=============== CONTAINER ================*/
+/*==========================================*/
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    border:var(--ramka);
+    height: 400px;
+}
+
+
+/*==========================================*/
+/*================= FOOTER =================*/
+/*==========================================*/
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    border:var(--ramka);
+    height: 50px;
+}
+.footer-responsive
+{
+   
+    display: none;
+
+}
+
+
+
+
+
+
+
+/*==========================================*/
+/*==============RESPONSYWNOSC===============*/
+/*=================480px====================*/
+
+@media all and (max-width:480px)
+{
+    
+    
+    
+    
+    
+    
+/*==========================================*/
+/*================= HEADER =================*/
+/*==========================================*/
+    
+    
+    .head-container
+    {
+        width:100%;
+        height:100%;
+        
+    }
+    
+    .header
+    {
+        margin-top:0.1em;
+    }
+    
+    .header-contact 
+    {
+        display: none;
+    }
+    
+    .header-logo-img
+    {
+        display: none;
+    }
+    
+    
+/*==========================================*/
+/*=============== CONTAINER ================*/
+/*==========================================*/
+    
+    .container
+    {
+        width:100%;
+    }
+    
+    
+    
+/*==========================================*/
+/*================= FOOTER =================*/
+/*==========================================*/
+    
+    
+   .footer
+    { 
+      display: none;
+    }
+    
+    
+    .footer-responsive
+    {
+       display: flex !important;
+       background-color:white; 
+       width:102%;
+       height: 40px;
+       box-sizing: border-box;
+        padding-top:5px;
+    }
+    
+    .footer-logo-img
+    {
+        width:35px;
+        height: 30px;
+    }
+    
+    .footer-contact
+    {
+        color:#161A1E;
+        font-size:0.8em;
+        
+    }
+
+    
+}
+
+
+
+
+
+
+/*==========================================*/
+/*==============RESPONSYWNOSC===============*/
+/*=================1024px====================*/
+
+
+@media all and (max-width:1024px)
+{
+    .head-container
+    {
+        width:99%;
+        height:100%;
+    }
+    
+    
+      .header
+    {
+        width:99%;
+        
+    }
+    
+    
+    .container
+    {
+        width:100%;
+    }
+    
+    .footer
+    {
+        width:100%;
+    }
+    
+  
 }
