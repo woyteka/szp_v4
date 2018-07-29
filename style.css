@@ -1,6 +1,9 @@
 :root{
   
-    --ramka:solid red;
+    --ramkaa:solid red;
+      font-size: 16px;
+    padding: 0px;
+    margin: 0px;
 }
 
 
@@ -17,6 +20,10 @@ body
 
 }
 
+body a {
+ text-decoration: none;   
+}
+
 /*==========================================*/
 /*================= HEADER =================*/
 /*==========================================*/
@@ -25,6 +32,7 @@ body
 .head-container
 {
     width: 100%;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +49,7 @@ body
     flex-direction: row;
     height:110px;
     margin-top:1.5em;
-    
+      
 }
 
 
@@ -52,13 +60,25 @@ body
     display:flex;
     align-content:flex-start;
     color:white;
+    
 }
 
-.header-logo-img
+.header-head-logo-img
+{
+    width:120px;
+    padding-top: 15px;
+     
+   
+}
+
+.header-logo-facebook-img
 {
     width:40px;
     margin-left: 5px;
     padding-top: 3px;
+  
+    display:flex;
+    padding-top: 35px;
    
     
 }
@@ -87,7 +107,7 @@ body
     flex-direction: column;
     width:80%;
     border:var(--ramka);
-    height: 400px;
+    height: 500px;
 }
 
 
@@ -113,12 +133,15 @@ body
 
 
 
-
+/*==========================================*/
 
 
 /*==========================================*/
 /*==============RESPONSYWNOSC===============*/
 /*=================480px====================*/
+
+
+/*==========================================*/
 
 @media all and (max-width:480px)
 {
@@ -150,7 +173,7 @@ body
         display: none;
     }
     
-    .header-logo-img
+    .header-logo-facebook-img
     {
         display: none;
     }
@@ -185,10 +208,13 @@ body
        width:102%;
        height: 40px;
        box-sizing: border-box;
-        padding-top:5px;
+       padding-top:5px;
+       position:fixed;
+        bottom:0px;
+        
     }
     
-    .footer-logo-img
+    .footer-logo-facebook-img
     {
         width:35px;
         height: 30px;
@@ -206,12 +232,15 @@ body
 
 
 
-
+/*==========================================*/
 
 
 /*==========================================*/
 /*==============RESPONSYWNOSC===============*/
 /*=================1024px====================*/
+
+
+/*==========================================*/
 
 
 @media all and (max-width:1024px)
