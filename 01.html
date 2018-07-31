@@ -1,13 +1,76 @@
 <style>
+    
+  .container-01
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+       
+        
+    }
+    
 
-.napis
+.container-01-napis-zpasji
+    {
+        color:#171B1F;
+        display: flex;
+        align-self: center;
+        font-size:4em;
+        font-weight: 800;
+        background-color:white;
+        padding-left:10px;
+        padding-right:10px;
+        padding-top:-10px;
+        padding-bottom:-10px;
+        box-sizing: border-box;
+        
+    }
+    
+.container-01-napis-do
+    {
+       color:white;
+       font-size:3em;
+       font-weight: 800;
+       align-self: flex-end;
+       line-height: 37px;
+    
+    
+    }
+    
+    
+ /*==========================================*/
+
+
+/*==============================================================*/
+/*==================================RESPONSYWNOSC===============*/
+/*=============================poniżej 480px====================*/
+
+
+/*==========================================*/   
+    
+  @media all and (max-width:480px)
+{  
+    .container-01-napis-zpasji
 {
-    color:red;
-    display: flex;
-    align-self: center;
+
+    font-size:2em;
+
+}
+    
+    .container-01-napis-do
+{
+   
+   font-size:2em;
+ line-height: 27px;
+    
+}
+    
 }
 
 </style>
 
-
-<div class="napis">JAKIŚ NAPIS</div>
+    <div class="container-01">
+        <span class="container-01-napis-zpasji">Z PASJI</span>
+        <span class="container-01-napis-do">DO</span>
+    </div>
