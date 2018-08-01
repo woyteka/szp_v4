@@ -5,6 +5,8 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-top:20px;
+        padding-right:200px;
         
        
         
@@ -13,6 +15,7 @@
 
 .container-01-napis-zpasji
     {
+        z-index: 100;
         color:#171B1F;
         display: flex;
         align-self: center;
@@ -38,6 +41,70 @@
     
     }
     
+    .container-01-napis-sportu
+    {
+       color:white;
+       font-size:11em;
+       font-weight: 800;
+       text-align: center;
+       line-height: 126px;
+    
+    
+    }
+    
+    
+    .container-03
+    
+    {
+        
+        margin-top:15px;
+        display: flex;
+        justify-content: center;
+        width:50%;
+        margin-left: 270px;
+        
+        
+        
+    }
+    
+     .container-01-napis-opis
+    
+    {
+        color: white;
+        font-size:0.8em;
+        
+      
+    }
+        
+     .container-04
+    
+    {
+         
+        display:flex;
+        justify-content: center;
+        
+        color: white;  
+        font-weight: 600;
+            
+    }
+    
+    .container-04 span
+    {
+        
+        line-height: 27px;
+        
+        
+        
+    }
+        
+    
+        
+        
+        
+    
+    
+    
+    
     
  /*==========================================*/
 
@@ -51,26 +118,158 @@
     
   @media all and (max-width:480px)
 {  
+    
+    
+   .container-01
+    {
+       
+       align-self: flex-start;
+        padding-right:0px;
+       
+       
+        
+    }   
+    
+    
+    
+    
+    
     .container-01-napis-zpasji
-{
+    {
 
-    font-size:2em;
+    
+    font-size:2.5em;
+    
+ 
 
-}
+    }
     
     .container-01-napis-do
-{
+    {
    
-   font-size:2em;
- line-height: 27px;
+    font-size:2.5em;
+    line-height: 31px;
+   
+   
+    }
+    
+    
+    .container-01-napis-sportu
+    
+    {
+       
+       font-size:4.3em;
+       line-height: 55px;
+       
+       
+    
+    }
+    
+    
+    .container-03
+    
+    {
+        margin-top:10px;
+        padding-left:10px;
+        width:80%;
+        margin-left: 1px;
+        
+        
+    }
+
+    
+    
+ 
+    
+    
     
 }
     
-}
+    
+    
+    
+    
+    
+  /*==========================================*/
+
+
+/*==============================================================*/
+/*==================================RESPONSYWNOSC===============*/
+/*============================poniżej 1024px====================*/
+
+
+/*==========================================*/
+
+
+@media all and (min-width:481px and max-width:1024px)
+{  
+    
+    
+      .container-01
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        
+    }
+    
+    
+        .container-01-napis-sportu
+    
+    {
+       
+       font-size:7.6em;
+       line-height: 55px;
+        margin-top:15px;
+       
+       
+    
+    }
+    
+    
+    
+    
+    
+       .container-03
+    
+    {
+        margin-top:30px;
+        padding-left:10px;
+        width:80%;
+        margin-left: 60px;
+        
+        
+    }
+    
+    
+    
+    }
+    
+    
+    
 
 </style>
 
     <div class="container-01">
-        <span class="container-01-napis-zpasji">Z PASJI</span>
-        <span class="container-01-napis-do">DO</span>
+        <div class="container-01-napis-zpasji">Z PASJI</div>
+        <div class="container-01-napis-do">DO</div>
+       
     </div>
+    <div class="container-02">
+     <div class="container-01-napis-sportu">SPORTU</div>
+    </div>
+           <div class="container-03">
+                 <div class="container-01-napis-opis">       
+Jestem absolwentem Akademii Wychowania Fizycznego i Sportu w Gdańsku.
+Posiadam licencję trenera II klasy LA i ratownika WOPR.  Jestem również instruktorem pływania,
+ masażystą I stopnia oraz posiadam kurs kinezjotapingu. Obecnie studiuję fizjoterapię.,
+  Nieustannie poszerzam swoją wiedzę poprzez naukę i praktykę. 
+                </div>
+                </div>
+                <div class="container-04"><a href="#" ><span>DOWIEDZ SIĘ WIĘCEJ</span><img src="img/narrow.jpg"></a></div>
+                
+            
+        
+   
+    
