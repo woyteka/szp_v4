@@ -82,19 +82,46 @@
          
         display:flex;
         justify-content: center;
-        
+        flex-direction: row;
+        flex-wrap: nowrap;
         color: white;  
         font-weight: 600;
-            
+        
     }
     
-    .container-04 span
+     .container-button a
+    {
+        display: flex;
+        text-decoration: none;
+        
+    }
+    
+    
+    .container-button
+    {
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-top:30px;
+        padding-left:200px;
+       
+        
+       
+        
+    }
+    
+    .container-button-txt
+    {
+
+         padding-top:3px; 
+ 
+    }
+    
+    
+    .container-button-img
     {
         
-        line-height: 27px;
-        
-        
-        
+        margin-left:5px;
     }
         
     
@@ -124,7 +151,7 @@
     {
        
        align-self: flex-start;
-        padding-right:0px;
+       padding-right:0px;
        
        
         
@@ -160,7 +187,7 @@
        
        font-size:4.3em;
        line-height: 55px;
-       
+       margin-left:-20px;
        
     
     }
@@ -178,7 +205,14 @@
     }
 
     
-    
+        .container-button
+    {
+        display:flex;
+        align-items: flex-start;
+        padding-left:1px;
+        margin-left: -100px;
+        margin-top:20px;
+      
  
     
     
@@ -248,6 +282,51 @@
     
     
     
+    
+    
+      /*==========================================*/
+
+
+/*==============================================================*/
+/*==================================RESPONSYWNOSC===============*/
+/*============================powyżej 1377px====================*/
+
+
+/*==========================================*/
+
+
+@media all and ( min-width:1377px) and (max-width:1920px)
+{  
+  
+      .container-03
+    
+    {
+        align-content: center;
+        margin-top:20px;
+        margin-left: 500px;
+        
+       
+        
+        
+    }  
+    
+    .container-01-napis-opis
+    {
+        width:70%;
+        margin-left: 700px;
+        border:solid white;
+    }
+    
+    
+    
+}
+    
+    
+    
+    
+    
+    
+    
 
 </style>
 
@@ -267,7 +346,13 @@ Posiadam licencję trenera II klasy LA i ratownika WOPR.  Jestem również instr
   Nieustannie poszerzam swoją wiedzę poprzez naukę i praktykę. 
                 </div>
                 </div>
-                <div class="container-04"><a href="#" ><span>DOWIEDZ SIĘ WIĘCEJ</span><img src="img/narrow.jpg"></a></div>
+  <div class="container-04">
+               <div class="container-button">
+               <a href="#">
+               <div class="container-button-txt">DOWIEDZ SIĘ WIĘCEJ</div>
+               <img src="img/narrow.jpg" class="container-button-img"></a>
+               </div>
+               </div>
                 
             
         
