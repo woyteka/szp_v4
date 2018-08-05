@@ -1,11 +1,54 @@
 <style>
     
+    
+    .photo-runner
+    
+    {
+      position: absolute;
+      top:200px;
+      right:380px;
+      z-index: -333;
+      width:18%;
+        
+        
+    
+        
+    }
+    
+    
+    .linia-lewa
+    
+    {
+      position:absolute;
+      z-index: -444;
+      top:360px;
+      left:-390px;  
+      width:700px;
+      opacity: 0.2;
+        
+        
+    }
+    
+    
+    .linia-prawa
+    
+    {
+      position:absolute;
+      z-index: -444;
+      top:280px;
+      right:-200px;
+      width:700px;
+      opacity: 0.2;  
+    }
+    
+    
+    
   .container-01
     {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top:20px;
+        margin-top:100px;
         padding-right:200px;
         
        
@@ -52,6 +95,8 @@
     
     }
     
+    /*==========================================*/
+    
     
     .container-03
     
@@ -75,6 +120,8 @@
         
       
     }
+    
+    /*==========================================*/
         
      .container-04
     
@@ -147,10 +194,30 @@
 {  
     
     
+      
+        .photo-runner
+    
+    {
+      
+        top:100px;
+        left:90px;
+        width:80%;
+      
+        
+        
+    
+        
+    } 
+    
+    
+    
+    
+    
    .container-01
     {
        
        align-self: flex-start;
+        margin-top:20px;
        padding-right:0px;
        
        
@@ -193,6 +260,9 @@
     }
     
     
+    /*==========================================*/
+    
+    
     .container-03
     
     {
@@ -214,7 +284,7 @@
         margin-top:20px;
       
  
-    
+    }
     
     
 }
@@ -235,7 +305,7 @@
 /*==========================================*/
 
 
-@media all and (min-width:481px and max-width:1024px)
+@media all and (min-width:481px) and (max-width:1365px)
 {  
     
     
@@ -249,20 +319,41 @@
     }
     
     
+    .container-01-napis-zpasji
+    {
+        
+              z-index: 100;
+        color:#171B1F;
+        display: flex;
+        align-self: center;
+        font-size:2em;
+        font-weight: 800;
+        background-color:white;
+        padding-left:10px;
+        padding-right:10px;
+        padding-top:-10px;
+        padding-bottom:-10px;
+        box-sizing: border-box;  
+        
+        
+    }
+    
+    
         .container-01-napis-sportu
     
     {
        
-       font-size:7.6em;
-       line-height: 55px;
+       font-size:4.6em;
+       line-height: 35px;
         margin-top:15px;
+        
        
        
     
     }
     
     
-    
+    /*==========================================*/
     
     
        .container-03
@@ -270,8 +361,8 @@
     {
         margin-top:30px;
         padding-left:10px;
-        width:80%;
-        margin-left: 60px;
+        width:45%;
+        margin-left: 350px;
         
         
     }
@@ -295,26 +386,72 @@
 /*==========================================*/
 
 
-@media all and ( min-width:1377px) and (max-width:1920px)
+@media all and ( min-width:1367px) 
+    
 {  
+    
+    
+        .photo-runner
+    
+    {
+      
+        top:250px;
+        right:520px;
+  
+    }
+    
+    
+    
+        .linia-lewa
+    
+    {
+      
+     
+      top:490px;
+      left:-100px;  
+    
+        
+        
+    }
+    
+    
+    .linia-prawa
+    
+    {
+     
+      top:380px;
+      right:100px;
+     
+    }
+    
+    
+    
+    
+    
   
       .container-03
     
     {
         align-content: center;
         margin-top:20px;
-        margin-left: 500px;
+        margin-left: 400px;
+ 
         
-       
-        
-        
-    }  
+    } 
+    
+    
+    .container-01-napis-zpasji
+    {
+       font-size:4em; 
+    }
+    
     
     .container-01-napis-opis
+    
     {
         width:70%;
-        margin-left: 700px;
-        border:solid white;
+        margin-left: 10px;
+        
     }
     
     
@@ -333,7 +470,7 @@
     <div class="container-01">
         <div class="container-01-napis-zpasji">Z PASJI</div>
         <div class="container-01-napis-do">DO</div>
-       
+         
     </div>
     <div class="container-02">
      <div class="container-01-napis-sportu">SPORTU</div>
@@ -342,13 +479,17 @@
                  <div class="container-01-napis-opis">       
 Jestem absolwentem Akademii Wychowania Fizycznego i Sportu w Gdańsku.
 Posiadam licencję trenera II klasy LA i ratownika WOPR.  Jestem również instruktorem pływania,
- masażystą I stopnia oraz posiadam kurs kinezjotapingu. Obecnie studiuję fizjoterapię.,
+ masażystą I stopnia oraz posiadam kurs kinezjotapingu. Obecnie studiuję fizjoterapię.
   Nieustannie poszerzam swoją wiedzę poprzez naukę i praktykę. 
                 </div>
                 </div>
+             <img src="img/fota_biegacze.png" class="photo-runner">
+             <div class="linia-lewa"><hr></div>
+             <div class="linia-prawa"><hr></div>
   <div class="container-04">
+              
                <div class="container-button">
-               <a href="#">
+               <a href="https://www.onet.pl/" target="_blank">
                <div class="container-button-txt">DOWIEDZ SIĘ WIĘCEJ</div>
                <img src="img/narrow.jpg" class="container-button-img"></a>
                </div>
