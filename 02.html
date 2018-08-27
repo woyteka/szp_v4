@@ -1,5 +1,6 @@
 
    
+   
 <script>
 
     var btn = document.querySelector('.container-button');
@@ -17,12 +18,13 @@ $(function()
  {
   
  
- $('.photo-runner').animate({opacity:"1" },600)
+ 
  $('.linia-lewa').animate({opacity:"0.2" },1000)
  $('.linia-prawa').animate({opacity:"0.2" },1000)
- $('.container-01-napis-zpasji').animate({opacity:"1" },1200)   
- $('.container-01-napis-do').animate({opacity:"1" },1600) 
- $('.container-01-napis-sportu').animate({opacity:"1" },1600)    
+ $('.container-01-napis-witam').animate({opacity:"1" },1200)   
+ $('.container-01-nazywam-sie').animate({opacity:"1" },1600) 
+ $('.container-01-napis-rafal').animate({opacity:"1" },1600) 
+ $('.container-01-napis-kensik').animate({opacity:"1" },1600)  
  $('.container-01-napis-opis').animate({opacity:"1" },1600)   
  $('.container-01-napis-sportu').animate({opacity:"1" },1800)   
  $('.container-01-napis-opis').animate({opacity:"1" },2300) 
@@ -42,7 +44,7 @@ $(function()
   
    
 
-</script>      
+</script>     
    
    
    
@@ -54,20 +56,7 @@ $(function()
    <style>
     
     
-    .photo-runner
-    
-    {
-      position: absolute;
-      top:150px;
-      right:380px;
-      z-index: -333;
-      width:18%;
-        opacity: 0;
-        
-        
-    
-        
-    }
+
     
     
     .linia-lewa
@@ -79,7 +68,7 @@ $(function()
       left:-390px;  
       width:700px;
       opacity: 0;
-     
+        
         
     }
     
@@ -92,7 +81,7 @@ $(function()
       top:280px;
       right:-200px;
       width:700px;
-     opacity: 0; 
+      opacity: 0;  
     }
     
     
@@ -102,7 +91,7 @@ $(function()
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top:100px;
+        margin-top:50px;
         padding-right:200px;
         
        
@@ -110,7 +99,7 @@ $(function()
     }
     
 
-.container-01-napis-zpasji
+.container-01-napis-witam
     {
         z-index: 100;
         color:#171B1F;
@@ -128,28 +117,50 @@ $(function()
         
     }
     
-.container-01-napis-do
+.container-01-nazywam-sie
     {
        color:white;
-       font-size:3em;
-       font-weight: 800;
+       font-size:2em;
+       font-weight:300;
        align-self: flex-end;
        line-height: 37px;
-        opacity:0;
-    
+       opacity: 0;
     
     }
+       
+       
+    .container-02
+    {
+       margin-top:-20px;
+       
+    }
+       
+       
+       
     
-    .container-01-napis-sportu
+    .container-01-napis-rafal
     {
        color:white;
-       font-size:11em;
+       font-size:7em;
        font-weight: 800;
        text-align: center;
        line-height: 126px;
-       opacity:0;
+       opacity: 0;
     
     }
+       
+     .container-01-napis-kensik
+    {
+       color:white;
+       font-size:7em;
+       font-weight: 800;
+       text-align: center;
+       line-height: 126px;
+       margin-top:-40px;
+        padding-left: 100px;
+       opacity: 0;
+    }  
+       
     
     /*==========================================*/
     
@@ -161,7 +172,7 @@ $(function()
         margin-top:15px;
         display: flex;
         justify-content: center;
-        width:50%;
+        width:60%;
         margin-left: 270px;
         
         
@@ -173,7 +184,9 @@ $(function()
     {
         color: white;
         font-size:0.8em;
-        opacity:0;
+        margin-top: -30px;
+        padding-left: 100px;
+        opacity: 0;
       
     }
     
@@ -196,7 +209,6 @@ $(function()
     {
         display: flex;
         text-decoration: none;
-        opacity:0;
         
     }
     
@@ -208,8 +220,7 @@ $(function()
         flex-direction: row;
         margin-top:30px;
         padding-left:200px;
-        opacity:0; 
-        z-index: 999;
+       
         
        
         
@@ -219,7 +230,7 @@ $(function()
     {
 
          padding-top:3px; 
-         cursor:pointer;
+ 
     }
     
     
@@ -227,7 +238,6 @@ $(function()
     {
         
         margin-left:5px;
-        cursor:pointer;
     }
         
     
@@ -254,19 +264,7 @@ $(function()
     
     
       
-        .photo-runner
-    
-    {
-      
-        top:100px;
-        left:90px;
-        width:80%;
-      
-        
-        
-    
-        
-    } 
+
     
     
     
@@ -276,7 +274,7 @@ $(function()
     {
        
        align-self: flex-start;
-        margin-top:20px;
+        margin-top:-30px;
        padding-right:0px;
        
        
@@ -287,7 +285,7 @@ $(function()
     
     
     
-    .container-01-napis-zpasji
+    .container-01-napis-witam
     {
 
     
@@ -297,26 +295,44 @@ $(function()
 
     }
     
-    .container-01-napis-do
+    .container-01-nazywam-sie
     {
    
-    font-size:2.5em;
+    font-size:1.5em;
+    margin-top: 80px;
+        margin-left: -160px;
     line-height: 31px;
    
    
     }
     
     
-    .container-01-napis-sportu
+    .container-01-napis-rafal
     
     {
        
        font-size:4.3em;
        line-height: 55px;
-       margin-left:-20px;
+        margin-top:15px;
+       margin-left:-90px;
        
     
     }
+    
+    
+       .container-01-napis-kensik
+    {
+       color:white;
+       font-size:4.3em;
+       font-weight: 800;
+       text-align: center;
+       line-height: 126px;
+       margin-top:-35px;
+        margin-left: -160px;
+    
+    }
+    
+    
     
     
     /*==========================================*/
@@ -325,13 +341,25 @@ $(function()
     .container-03
     
     {
+      
         margin-top:10px;
-        padding-left:10px;
-        width:80%;
-        margin-left: 1px;
+       
+        width:98%;
+        margin-left:1px;
+        
         
         
     }
+    
+    
+    .container-01-napis-opis
+    {
+       text-align: left; 
+       padding-left:10px;
+       margin-left:1px;
+        
+    }
+    
 
     
         .container-button
@@ -378,7 +406,7 @@ $(function()
     }
     
     
-    .container-01-napis-zpasji
+    .container-01-napis-witam
     {
         
               z-index: 100;
@@ -398,13 +426,29 @@ $(function()
     }
     
     
-        .container-01-napis-sportu
+        .container-01-napis-rafal
     
     {
        
        font-size:4.6em;
        line-height: 35px;
-        margin-top:15px;
+        margin-top:35px;
+        margin-left: -100px;
+        
+       
+       
+    
+    }
+    
+    
+        .container-01-napis-kensik
+    
+    {
+       
+       font-size:4.6em;
+       line-height: 35px;
+        margin-top:25px;
+        margin-left: -100px;
         
        
        
@@ -418,10 +462,10 @@ $(function()
        .container-03
     
     {
-        margin-top:30px;
+        margin-top:47px;
         padding-left:10px;
-        width:45%;
-        margin-left: 350px;
+        width:55%;
+        margin-left: 250px;
         
         
     }
@@ -499,7 +543,7 @@ $(function()
     } 
     
     
-    .container-01-napis-zpasji
+    .container-01-napis-witam
     {
        font-size:4em; 
     }
@@ -535,13 +579,16 @@ $(function()
 </style>
 
     <div class="container-01">
-        <div class="container-01-napis-zpasji">Z PASJI</div>
-        <div class="container-01-napis-do">DO</div>
+        <div class="container-01-napis-witam">WITAM</div>
+        <div class="container-01-nazywam-sie">Nazywam się</div>
          
     </div>
     <div class="container-02">
-     <div class="container-01-napis-sportu">SPORTU</div>
-    </div>
+     <div class="container-01-napis-rafal">RAFAŁ</div>
+     <div class="container-01-napis-kensik">KENSIK</div>
+     </div>
+          
+          
            <div class="container-03">
                  <div class="container-01-napis-opis">       
 Jestem absolwentem Akademii Wychowania Fizycznego i Sportu w Gdańsku.
@@ -550,15 +597,15 @@ Posiadam licencję trenera II klasy LA i ratownika WOPR.  Jestem również instr
   Nieustannie poszerzam swoją wiedzę poprzez naukę i praktykę. 
                 </div>
                 </div>
-             <img src="img/fota_biegacze.png" class="photo-runner">
+           
              <div class="linia-lewa"><hr></div>
              <div class="linia-prawa"><hr></div>
   <div class="container-04">
               
                <div class="container-button">
-               
+               <a href="https://www.onet.pl/" target="_blank">
                <div class="container-button-txt">DOWIEDZ SIĘ WIĘCEJ</div>
-               <img src="img/narrow.jpg" class="container-button-img">
+               <img src="img/narrow.jpg" class="container-button-img"></a>
                </div>
                </div>
                
